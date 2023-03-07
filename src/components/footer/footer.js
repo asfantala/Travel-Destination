@@ -7,7 +7,7 @@ function Footer() {
                 <a href="https://www.instagram.com"></a>
             </div>
             <div className="author">
-                <p>Created by Tala </p>
+                <p>Created by Tala Asfan</p>
             </div>
 
 
