@@ -1,19 +1,26 @@
-const data = require("./data/db.json");
+import React, { useEffect } from 'react'
+const data = require("../../data/db.json");
 
-function Tours (props){
+export default function Tours() {
+    //useEffect(()=>{
+    //     console.log(data);
+    // },[])
+
     return (
-        <>
-        {props.arrData.map((item)=>{
-                return (
-                    <div key={item.ID}>
-                        <h3>{item.name}</h3>
-                        <img src={item.image} alt={item.name}></img>
-                    </div>
-                )
-            })}
-        
-     </>
-    );
-}
+        <div>{data.map(item => {
+            return (
+                <div key={item.id}>
+                    <p >{item.name}</p>
+                    <img src={item.image} alt={item.name}></img>
+                    <hr></hr>
 
-export default Tours;
+                </div>
+            )
+        })
+
+
+        }
+
+        </div>
+    )
+}
