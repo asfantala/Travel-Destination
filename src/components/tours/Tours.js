@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+// import React, { useEffect } from 'react'
 const data = require("../../data/db.json");
 
 export default function Tours() {
