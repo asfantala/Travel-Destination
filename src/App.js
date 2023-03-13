@@ -6,18 +6,19 @@ import Home from './components/home/Home';
 import TourDetail from './components/TourDetails/Tourdetails.js';
 import { BrowserRouter as Router, Route,Routes} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/header/header.js'
+// import Header from './components/header/header.js'
 
 function App() {
   return (
     
       <div className="App">
-      <Header/>
+      {/* <Header/> */}
       <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="city/:id" element={<TourDetail />} />
-
+            {/* <Route path="/" element={<Home />} />
+            <Route path="city/:id" element={<TourDetail />} /> */}
+    <Home/>
+    
           </Routes>
           </BrowserRouter>
 
