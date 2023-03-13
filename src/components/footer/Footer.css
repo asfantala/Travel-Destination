@@ -1,0 +1,11 @@
+.footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 164px;
+    position: relative;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    background-color: antiquewhite;
+}
